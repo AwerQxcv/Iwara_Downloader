@@ -1,0 +1,168 @@
+{
+  "alert_first_run": {
+    "message": "Iwara Downloaderがインストールされました。オプションページでファイル名と保存先フォルダを設定後、必ず保存してください。",
+    "description": "拡張機能が初めてインストールされたときに表示される通知です。"
+  },
+
+  "manifest_addon_desc": {
+    "message": "Iwaraから動画を簡単にダウンロードできる拡張機能です。",
+    "description": "以下 Manifest.json"
+  },
+  "manifest_command_desc": {
+    "message": "現在のページの動画をダウンロードします。"
+  },
+
+  "option_title": {
+    "message": "Iwara Downloaderの設定",
+    "description": "以下 options.html"
+  },
+  "open_update_notes": {
+    "message": "アップデートノートを開く"
+  },
+  "filename_setting": {
+    "message": "ファイル名の設定（書式設定可）"
+  },
+  "filename_setting_description1": {
+    "message": "保存時のファイル名を設定します。"
+  },
+  "save": {
+    "message": "保存"
+  },
+  "save_button": {
+    "message": "設定を保存"
+  },
+  "save_message": {
+    "message": "保存しました。"
+  },
+  "format_list": {
+    "message": "書式一覧表"
+  },
+  "format_list_header1": {
+    "message": "書式"
+  },
+  "format_list_header2": {
+    "message": "説明"
+  },
+  "format_title": {
+    "message": "動画のタイトル"
+  },
+  "format_videoid": {
+    "message": "動画のID"
+  },
+  "format_username": {
+    "message": "動画を投稿したユーザーの名前"
+  },
+  "format_userid": {
+    "message": "動画を投稿したユーザーのID"
+  },
+  "format_year": {
+    "message": "アップロードされた年（西暦）"
+  },
+  "format_yeartwodigits": {
+    "message": "アップロードされた年の最後の2桁"
+  },
+  "format_month": {
+    "message": "アップロードされた月（01〜12）"
+  },
+  "format_day": {
+    "message": "アップロードされた日（01〜31）"
+  },
+  "format_hour": {
+    "message": "アップロードされた時間（時：00〜23）"
+  },
+  "format_minute": {
+    "message": "アップロードされた時間（分：00〜59）"
+  },
+  "format_second": {
+    "message": "アップロードされた時間（秒：00〜59）"
+  },
+  "format_saved_year": {
+    "message": "保存時点の年（西暦）"
+  },
+  "format_saved_yeartwodigits": {
+    "message": "保存時点の年の最後の2桁"
+  },
+  "format_saved_month": {
+    "message": "保存時点の月（01〜12）"
+  },
+  "format_saved_day": {
+    "message": "保存時点の日（01〜31）"
+  },
+  "format_saved_hour": {
+    "message": "保存時点の時間（時：00〜23）"
+  },
+  "format_saved_minute": {
+    "message": "保存時点の時間（分：00〜59）"
+  },
+  "format_saved_second": {
+    "message": "保存時点の時間（秒：00〜59）"
+  },
+  "save_location": {
+    "message": "保存先フォルダの設定（書式設定可）"
+  },
+  "savelocation_description1": {
+    "message": "Firefoxに設定されているダウンロードフォルダ<strong>以降のパス</strong>を設定します。"
+  },
+  "savelocation_description2": {
+    "message": "Firefoxに設定されているダウンロードフォルダは、ブラウザで「about:preferences#general」を開いて確認できる「次のフォルダーに保存する(V)」の値です。"
+  },
+  "savelocation_description3": {
+    "message": "例えば「次のフォルダーに保存する(V)」が「P:\\Downloads」で、設定したパスが「Iwara_Downloader/$UserName$/」の場合、保存される場所は「P:\\Downloads\\Iwara_Downloader\\user\\filename.mp4」になります。"
+  },
+  "savelocation_description4": {
+    "message": "フォルダの区切り文字には半角スラッシュ「/」を使用してください。"
+  },
+  "savelocation_description5": {
+    "message": "<strong>相対パス「../」および「./」は使用できません。</strong>"
+  },
+  "autodown_description": {
+    "message": "ダウンロード前に常にダウンロード確認ダイアログを表示します。"
+  },
+  "download_setting": {
+    "message": "ダウンロード設定"
+  },
+  "autolike_description": {
+    "message": "ダウンロードと同時にLikeボタンを押します。"
+  },
+
+  "update_notes_title": {
+    "message": "アップデートノート",
+    "description": "以下 Update-notes.html用"
+  },
+  "update_notes_description": {
+    "message": "IWARA DOWNLOADER アップデート"
+  },
+  "update_notes_what_changed": {
+    "message": "何が変わりましたか？"
+  },
+  "update_notes_previous_version": {
+    "message": "以前のバージョン"
+  },
+  "update_notes_current_version": {
+    "message": "現在のバージョン"
+  },
+  "update_notes_changes": {
+    "message": "変更内容"
+  },
+  "update_notes_new": {
+    "message": "新機能"
+  },
+  "update_notes_new_title": {
+    "message": "新機能"
+  },
+  "update_notes_new_desc": {
+    "message": "ショートカットキーによるダウンロード機能が追加されました。デフォルトのショートカットキーは「Alt+Shift+Z」です。\n"
+  },
+  "update_notes_imp": {
+    "message": "改善された機能"
+  },
+  "update_notes_imp_title": {
+    "message": "改善された機能"
+  },
+  "update_notes_imp_desc": {
+    "message": "今後のアップデートごとに、ポップアップウィンドウで変更内容を確認できるようになりました。\nまた、設定ページからアップデート履歴を確認できるようになりました。"
+  },
+  "update_notes_bug_report": {
+    "message": "🐛 バグ報告"
+  }
+}

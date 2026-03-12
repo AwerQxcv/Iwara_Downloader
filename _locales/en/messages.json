@@ -1,0 +1,168 @@
+{
+  "alert_first_run": {
+    "message": "Iwara Downloader has been installed. Please configure the filename and save folder settings on the options page, then make sure to save.",
+    "description": "Notification displayed when the extension is installed for the first time."
+  },
+
+  "manifest_addon_desc": {
+    "message": "A browser extension for easy video downloading from Iwara.",
+    "description": "Below for Manifest.json"
+  },
+  "manifest_command_desc": {
+    "message": "Download the video on the current page."
+  },
+
+  "option_title": {
+    "message": "Settings for Iwara Downloader",
+    "description": "Below for options.html"
+  },
+  "open_update_notes": {
+    "message": "Open Update Notes"
+  },
+  "filename_setting": {
+    "message": "Filename setting (format supported)"
+  },
+  "filename_setting_description1": {
+    "message": "Set the filename used when saving."
+  },
+  "save": {
+    "message": "Save"
+  },
+  "save_button": {
+    "message": "Save Settings"
+  },
+  "save_message": {
+    "message": "Settings saved."
+  },
+  "format_list": {
+    "message": "Format List"
+  },
+  "format_list_header1": {
+    "message": "Format"
+  },
+  "format_list_header2": {
+    "message": "Description"
+  },
+  "format_title": {
+    "message": "Video title"
+  },
+  "format_videoid": {
+    "message": "Video ID"
+  },
+  "format_username": {
+    "message": "Name of the user who uploaded the video"
+  },
+  "format_userid": {
+    "message": "ID of the user who uploaded the video"
+  },
+  "format_year": {
+    "message": "Upload year"
+  },
+  "format_yeartwodigits": {
+    "message": "Upload year (last 2 digits)"
+  },
+  "format_month": {
+    "message": "Upload month (01–12)"
+  },
+  "format_day": {
+    "message": "Upload day (01–31)"
+  },
+  "format_hour": {
+    "message": "Upload time (hour: 00–23)"
+  },
+  "format_minute": {
+    "message": "Upload time (minute: 00–59)"
+  },
+  "format_second": {
+    "message": "Upload time (second: 00–59)"
+  },
+  "format_saved_year": {
+    "message": "Year at time of saving"
+  },
+  "format_saved_yeartwodigits": {
+    "message": "Year at time of saving (last 2 digits)"
+  },
+  "format_saved_month": {
+    "message": "Month at time of saving (01–12)"
+  },
+  "format_saved_day": {
+    "message": "Day at time of saving (01–31)"
+  },
+  "format_saved_hour": {
+    "message": "Time at time of saving (hour: 00–23)"
+  },
+  "format_saved_minute": {
+    "message": "Time at time of saving (minute: 00–59)"
+  },
+  "format_saved_second": {
+    "message": "Time at time of saving (second: 00–59)"
+  },
+  "save_location": {
+    "message": "Save folder setting (format supported)"
+  },
+  "savelocation_description1": {
+    "message": "Sets the path <strong>after</strong> the download folder configured in Firefox."
+  },
+  "savelocation_description2": {
+    "message": "The download folder set in Firefox is the value of 'Save files to' found at 'about:preferences#general' in the browser."
+  },
+  "savelocation_description3": {
+    "message": "For example, if 'Save files to' is 'P:\\Downloads' and the configured path is 'Iwara_Downloader/$UserName$/', the file will be saved to 'P:\\Downloads\\Iwara_Downloader\\user\\filename.mp4'."
+  },
+  "savelocation_description4": {
+    "message": "Use a forward slash '/' as the folder separator."
+  },
+  "savelocation_description5": {
+    "message": "<strong>Relative paths such as '../' and './' cannot be used.</strong>"
+  },
+  "autodown_description": {
+    "message": "Always show a download confirmation dialog before saving."
+  },
+  "download_setting": {
+    "message": "Download Settings"
+  },
+  "autolike_description": {
+    "message": "Automatically click the Like button when downloading."
+  },
+
+  "update_notes_title": {
+    "message": "Update Notes",
+    "description": "Below for Update-notes.html"
+  },
+  "update_notes_description": {
+    "message": "IWARA DOWNLOADER Update"
+  },
+  "update_notes_what_changed": {
+    "message": "What's Changed?"
+  },
+  "update_notes_previous_version": {
+    "message": "Previous Version"
+  },
+  "update_notes_current_version": {
+    "message": "Current Version"
+  },
+  "update_notes_changes": {
+    "message": "Changes"
+  },
+  "update_notes_new": {
+    "message": "New"
+  },
+  "update_notes_new_title": {
+    "message": "New Feature"
+  },
+  "update_notes_new_desc": {
+    "message": "Download via keyboard shortcut has been added. The default shortcut is 'Alt+Shift+Z'.\n"
+  },
+  "update_notes_imp": {
+    "message": "Improved"
+  },
+  "update_notes_imp_title": {
+    "message": "Improvement"
+  },
+  "update_notes_imp_desc": {
+    "message": "From now on, each update will display a popup window summarizing what has changed.\nUpdate history can also be viewed from the settings page."
+  },
+  "update_notes_bug_report": {
+    "message": "🐛 Report a Bug"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "alert_first_run": {
+    "message": "Iwara Downloader가 설치되었습니다. 옵션 페이지에서 파일 이름 설정과 다운로드 폴더 설정을 한 후, 반드시 저장해주세요.",
+    "description": "확장 프로그램이 처음 설치되었을 때 나타나는 알림입니다."
+  },
+
+  "manifest_addon_desc": {
+    "message": "Iwara에서 동영상을 쉽게 다운로드할 수 있도록 도와주는 확장 프로그램입니다.",
+    "description": "이하 Manifest.json"
+  },
+  "manifest_command_desc": {
+    "message": "현재 페이지의 동영상을 다운로드합니다."
+  },
+
+  "option_title": {
+    "message": "Iwara Downloader 설정",
+    "description": "이하 options.html"
+  },
+  "open_update_notes": {
+    "message": "업데이트 노트 열기"
+  },
+  "filename_setting": {
+    "message": "파일 이름 설정 (서식 설정 가능)"
+  },
+  "filename_setting_description1": {
+    "message": "저장 시의 파일 이름을 설정합니다."
+  },
+  "save": {
+    "message": "저장"
+  },
+  "format_list": {
+    "message": "서식 일란표"
+  },
+  "format_list_header1": {
+    "message": "서식"
+  },
+  "format_list_header2": {
+    "message": "설명"
+  },
+  "format_title": {
+    "message": "영상의 제목"
+  },
+  "format_userid": {
+    "message": "동영상을 업로드한 유저의 ID"
+  },
+  "format_videoid": {
+    "message": "동영상의 ID"
+  },
+  "format_username": {
+    "message": "동영상을 업로드한 유저"
+  },
+  "format_year": {
+    "message": "업로드 된 년도"
+  },
+  "format_yeartwodigits": {
+    "message": "업로드 된 년도 (마지막 2자리)"
+  },
+  "format_month": {
+    "message": "업로드 된 월 (01~12)"
+  },
+  "format_day": {
+    "message": "업로드 된 일 (01~31)"
+  },
+  "format_hour": {
+    "message": "업로드 된 시간 (시: 00~23)"
+  },
+  "format_minute": {
+    "message": "업로드 된 시간 (분: 00~59)"
+  },
+  "format_second": {
+    "message": "업로드 된 시간 (초: 00~59)"
+  },
+  "format_saved_year": {
+    "message": "저장 당시의 년도"
+  },
+  "format_saved_yeartwodigits": {
+    "message": "저장 당시의 년도 (마지막 2자리)"
+  },
+  "format_saved_month": {
+    "message": "저장 당시의 월 (01~12)"
+  },
+  "format_saved_day": {
+    "message": "저장 당시의 일 (01~31)"
+  },
+  "format_saved_hour": {
+    "message": "저장 당시의 시간 (시: 00~23)"
+  },
+  "format_saved_minute": {
+    "message": "저장 당시의 시간 (분: 00~59)"
+  },
+  "format_saved_second": {
+    "message": "저장 당시의 시간 (초: 00~59)"
+  },
+  "save_message": {
+    "message": "저장했습니다."
+  },
+  "save_button": {
+    "message": "설정을 저장"
+  },
+  "save_location": {
+    "message": "다운로드 폴더 설정 (서식 설정 가능)"
+  },
+  "savelocation_description1": {
+    "message": "Firefox에 설정된 다운로드 폴더 <strong>이후의 경로</strong>를 설정합니다."
+  },
+  "savelocation_description2": {
+    "message": "Firefox에 설정된 다운로드 폴더는 파이어 폭스 주소창의 'about:preferences#general' 에 있는 '저장 위치(V)' 의 값입니다."
+  },
+  "savelocation_description3": {
+    "message": "예를 들어 '저장 위치(V)'가 'P:\\Downloads'이고 설정한 경로가 'Iwara_Downloader/$UserName$/' 일 경우, 다운로드 될 위치는 'P:\\Downloads\\Iwara_Downloader\\user\\filename.mp4' 가 됩니다."
+  },
+  "savelocation_description4": {
+    "message": "폴더를 나누는 문자로는 슬래시 '/' 를 사용해주세요."
+  },
+  "savelocation_description5": {
+    "message": "<strong>상대 경로인 '../' 및 './' 는 사용할 수 없습니다.</strong>"
+  },
+  "autodown_description": {
+    "message": "다운로드 전 항상 다운로드 확인 창을 표시합니다."
+  },
+  "download_setting": {
+    "message": "다운로드 설정"
+  },
+  "autolike_description": {
+    "message": "다운로드와 동시에 Like 버튼을 누릅니다."
+  },
+
+  "update_notes_title": {
+    "message": "업데이트 노트",
+    "description": "이하 Update-notes.html용"
+  },
+  "update_notes_description": {
+    "message": "IWARA DOWNLOADER 업데이트"
+  },
+  "update_notes_what_changed": {
+    "message": "무엇이 바뀌었나요?"
+  },
+  "update_notes_previous_version": {
+    "message": "이전 버전"
+  },
+  "update_notes_current_version": {
+    "message": "현재 버전"
+  },
+  "update_notes_changes": {
+    "message": "변경사항"
+  },
+  "update_notes_new": {
+    "message": "새로운 기능"
+  },
+  "update_notes_new_title": {
+    "message": "새로운 기능"
+  },
+  "update_notes_new_desc": {
+    "message": "단축키를 통한 다운로드 기능이 추가되었습니다. 기본 단축키는 'Alt+Shift+Z' 입니다.\n"
+  },
+  "update_notes_imp": {
+    "message": "개선된 기능"
+  },
+  "update_notes_imp_title": {
+    "message": "개선된 기능"
+  },
+  "update_notes_imp_desc": {
+    "message": "앞으로 업데이트마다 팝업 창을 통한 업데이트 확인 기능으로 무엇이 변경됐는지 알기 쉽게끔 하였습니다.\n또한 업데이트 내역을 설정 페이지에서 열어볼 수 있게끔 설정하였습니다."
+  },
+  "update_notes_bug_report": {
+    "message": "🐛 버그 제보"
+  }
+}

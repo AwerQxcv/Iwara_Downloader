@@ -1,0 +1,296 @@
+:root {
+    --bg-color: #f4f6f8;
+    --card-bg: #ffffff;
+    --text-color: #333333;
+    --text-secondary: #555555;
+    --accent-color: #4a90e2;
+    --border-color: #e1e4e8;
+    --hover-color: #f1f1f1;
+    --danger-color: #e74c3c;
+    --heading-color: #2c3e50;
+    --table-header-bg: #f8f9fa;
+    --table-stripe-bg: #f5f5f5;
+    --input-border: #cccccc;
+    --save-btn-bg: #fa6400;
+    --save-btn-hover: #fb8332;
+    --save-btn-active: #c85000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #0e0f11;
+        --card-bg: #16181c;
+        --text-color: #e8eaf0;
+        --text-secondary: #9ca3af;
+        --accent-color: #5b8dff;
+        --border-color: #2a2d35;
+        --hover-color: #1e2028;
+        --danger-color: #f87171;
+        --heading-color: #d1d5db;
+        --table-header-bg: #1e2028;
+        --table-stripe-bg: #1a1c22;
+        --input-border: #3a3f4e;
+        --save-btn-bg: #fa6400;
+        --save-btn-hover: #fb8332;
+        --save-btn-active: #c85000;
+    }
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.save-options {
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* 타이틀 */
+.title {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+}
+
+.title h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+
+/* 업데이트 노트 링크 스타일 */
+.update-notes-link {
+  display: inline-block;
+  font-size: 14px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.update-notes-link:hover {
+  color: #007bff;
+}
+
+.update-notes-link:visited {
+  color: var(--text-color);
+}
+
+/* 섹션 카드 */
+div:not(.title):not(.radios) {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--heading-color);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--text-color);
+    width: auto;
+    position: relative;
+}
+
+h2:first-child {
+    margin-top: 0;
+}
+
+h2::after {
+    content: none;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--heading-color);
+    padding: 0 0 10px 12px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--text-color);
+    border-left: 4px solid var(--accent-color);
+    background: none;
+}
+
+p {
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin: 6px 0 10px 0;
+    line-height: 1.6;
+}
+
+/* 입력 필드 */
+input[type="text"],
+textarea,
+#filename_definition,
+#save_location {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    margin-top: 6px;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+#filename_definition:focus,
+#save_location:focus {
+    border-color: var(--accent-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+/* 체크박스 & 라벨 */
+label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--text-color);
+    background: none;
+    border-radius: 4px;
+    transition: background-color 0.15s;
+}
+
+label:hover {
+    background-color: var(--hover-color);
+    padding-left: 6px;
+    margin-left: -6px;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--accent-color);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* 저장 버튼 */
+#save-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--save-btn-bg);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 1px 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.25;
+    min-height: 2.5rem;
+    padding: 0.5rem 1.25rem;
+    text-decoration: none;
+    transition: background-color 0.2s, box-shadow 0.2s, transform 0.1s;
+    margin: 10px 0 6px 0;
+}
+
+#save-button:hover,
+#save-button:focus {
+    background-color: var(--save-btn-hover);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 2px;
+    transform: translateY(-1px);
+    outline: none;
+}
+
+#save-button:active {
+    background-color: var(--save-btn-active);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 2px;
+    transform: translateY(0);
+}
+
+#status {
+    display: block;
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-top: 4px;
+}
+
+/* 라디오 그룹 */
+.radios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+
+.radios label {
+    margin: 0;
+    padding: 6px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--card-bg);
+}
+
+.radios label:hover {
+    background-color: var(--hover-color);
+    margin-left: 0;
+    padding-left: 12px;
+}
+
+/* 테이블 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+table *, table *::before, table *::after {
+    box-sizing: border-box;
+}
+
+table th {
+    background-color: var(--table-header-bg);
+    color: var(--text-secondary);
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+table td {
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+table tbody tr:hover {
+    background-color: var(--hover-color);
+}

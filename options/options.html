@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Iwara Downloader</title>
+  <link rel="stylesheet" href="options.css" />
+  <script src="options.js" defer></script>
+</head>
+
+<body>
+  <section class="save-options">
+
+    <!-- 0. 업데이트 노트 -->
+    <div class="section-card">
+      <a href="../update-notes/update-notes.html" target="_blank" class="update-notes-link" data-locale="open_update_notes">Update Notes</a>
+    </div>
+
+    <div class="section-card">
+      <h2 data-locale="filename_setting">Set File name when downloading (can set format)</h2>
+      <p data-locale="filename_setting_description1">Setting file name when you downloading.</p>
+      <input type="text" id="filename_definition" value="$YY$$MM$$DD$_$Title$">
+
+      <h2 data-locale="save_location">Set download location (can set format)</h2>
+      <p data-locale="savelocation_description1" style="margin:6px 0 0 0;">Sets the path <strong>after</strong> the download location set in Firefox.<br></p>
+      <p data-locale="savelocation_description2" style="margin:0;">The download location set in Firefox is the value of 'Download location' in the browser's 'about:preferences'.</p>
+      <p data-locale="savelocation_description3" style="margin:6px 0 0 0;">For example, if the 'Download location' is 'P:\Download' and the set path is 'MMDFans/?username?/', the save location will be 'P:\Download\MMDFans\?username?\filename.mp4'.</p>
+      <p data-locale="savelocation_description4" style="margin:6px 0 0 0;">Please use '/' to separate folders.</p>
+      <p data-locale="savelocation_description5" style="margin:0 0 6px 0;"><strong>Relative paths like '../' and './' cannot be used.</strong></p>
+      <input type="text" id="save_location" value="Iwara Downloader/[$UserID$] $UserName$/">
+
+      <label for="auto_down" style="margin-top: 12px;">
+        <input type="checkbox" id="auto_down">
+        <span data-locale="autodown_description">If the download folder is set, the window for selecting the file's save location will not appear.</span>
+      </label>
+    </div>
+
+    <div class="section-card">
+      <h2 data-locale="download_setting">Download Settings</h2>
+      <label for="auto_like">
+        <input type="checkbox" id="auto_like">
+        <span data-locale="autolike_description"></span>
+      </label>
+    </div>
+
+    <div class="section-card">
+      <h2 data-locale="save">Save</h2>
+      <input type="button" value="Save Settings" id="save-button" />
+      <output id="status"></output>
+    </div>
+
+    <div class="section-card">
+      <h3 data-locale="format_list">Format Table</h3>
+      <table>
+        <thead>
+          <tr>
+            <th data-locale="format_list_header1">Format</th>
+            <th data-locale="format_list_header2">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>$Title$</td><td data-locale="format_title">Title</td></tr>
+          <tr><td>$VideoID$</td><td data-locale="format_videoid">Video ID</td></tr>
+          <tr><td>$UserName$</td><td data-locale="format_username">User Name</td></tr>
+          <tr><td>$UserID$</td><td data-locale="format_userid">User @ID</td></tr>
+          <tr><td>$YYYY$</td><td data-locale="format_year">Upload Year</td></tr>
+          <tr><td>$YY$</td><td data-locale="format_yeartwodigits">Upload Year 2-digits</td></tr>
+          <tr><td>$MM$</td><td data-locale="format_month">Upload Month (1~12)</td></tr>
+          <tr><td>$DD$</td><td data-locale="format_day">Upload Day</td></tr>
+          <tr><td>$hh$</td><td data-locale="format_hour">Upload hour</td></tr>
+          <tr><td>$mm$</td><td data-locale="format_minute">Upload minute</td></tr>
+          <tr><td>$ss$</td><td data-locale="format_second">Upload second</td></tr>
+          <tr><td>$NYYYY$</td><td data-locale="format_saved_year">Saved Year</td></tr>
+          <tr><td>$NYY$</td><td data-locale="format_saved_yeartwodigits">Saved Year 2-digits</td></tr>
+          <tr><td>$NMM$</td><td data-locale="format_saved_month">Saved Month (1~12)</td></tr>
+          <tr><td>$NDD$</td><td data-locale="format_saved_day">Saved Day</td></tr>
+          <tr><td>$Nhh$</td><td data-locale="format_saved_hour">Saved hour</td></tr>
+          <tr><td>$Nmm$</td><td data-locale="format_saved_minute">Saved minute</td></tr>
+          <tr><td>$Nss$</td><td data-locale="format_saved_second">Saved second</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+</body>
+
+</html>
