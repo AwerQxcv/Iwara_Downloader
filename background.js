@@ -24,7 +24,7 @@ browser.commands.onCommand.addListener((command) => {
 // 업데이트 & 설치 시 표시되는 팝업 창
 browser.runtime.onInstalled.addListener((details) => {
   if (details.reason === 'update') {
-    browser.tabs.create({ url: `update_notes/update-notes.html?prev=${details.previousVersion}` });
+    browser.tabs.create({ url: `update-notes/update-notes.html?prev=${details.previousVersion}` });
   }
 });
 
