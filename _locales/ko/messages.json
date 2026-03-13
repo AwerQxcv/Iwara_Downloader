@@ -141,23 +141,26 @@
   "update_notes_current_version": {
     "message": "현재 버전"
   },
+  "update_notes_important": {
+    "message": "중요 사항"
+  },
+  "update_notes_important_title": {
+    "message": "⚠️ 업데이트 후 다음 사항을 반드시 확인해주세요."
+  },
+  "update_notes_important_desc": {
+    "message": "업데이트로 인하여 서식 지정이 변경되었습니다.\n기존에 설정한 서식은 사용 불가능하므로 본인 환경에 맞게 새로 설정해주세요."
+  },
   "update_notes_changes": {
     "message": "변경사항"
   },
-  "update_notes_new": {
-    "message": "새로운 기능"
-  },
   "update_notes_new_title": {
-    "message": "새로운 기능"
+    "message": "🆕 새로운 기능"
   },
   "update_notes_new_desc": {
     "message": "단축키를 통한 다운로드 기능이 추가되었습니다. 기본 단축키는 'Alt+Shift+Z' 입니다.\n"
   },
-  "update_notes_imp": {
-    "message": "개선된 기능"
-  },
   "update_notes_imp_title": {
-    "message": "개선된 기능"
+    "message": "🔧 개선된 기능"
   },
   "update_notes_imp_desc": {
     "message": "앞으로 업데이트마다 팝업 창을 통한 업데이트 확인 기능으로 무엇이 변경됐는지 알기 쉽게끔 하였습니다.\n또한 업데이트 내역을 설정 페이지에서 열어볼 수 있게끔 설정하였습니다."

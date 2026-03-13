@@ -141,23 +141,26 @@
   "update_notes_current_version": {
     "message": "現在のバージョン"
   },
+  "update_notes_important": {
+    "message": "重要事項"
+  },
+  "update_notes_important_title": {
+    "message": "⚠️ アップデート後、次の事項を必ず確認してください。"
+  },
+  "update_notes_important_desc": {
+    "message": "アップデートにより書式指定が変更されました。\n既に設定されている書式は使用できなくなったため、お使いの環境に合わせて新たに設定してください。"
+  },
   "update_notes_changes": {
     "message": "変更内容"
   },
-  "update_notes_new": {
-    "message": "新機能"
-  },
   "update_notes_new_title": {
-    "message": "新機能"
+    "message": "🆕 新機能"
   },
   "update_notes_new_desc": {
     "message": "ショートカットキーによるダウンロード機能が追加されました。デフォルトのショートカットキーは「Alt+Shift+Z」です。\n"
   },
-  "update_notes_imp": {
-    "message": "改善された機能"
-  },
   "update_notes_imp_title": {
-    "message": "改善された機能"
+    "message": "🔧 改善された機能"
   },
   "update_notes_imp_desc": {
     "message": "今後のアップデートごとに、ポップアップウィンドウで変更内容を確認できるようになりました。\nまた、設定ページからアップデート履歴を確認できるようになりました。"

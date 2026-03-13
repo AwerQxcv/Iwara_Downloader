@@ -12,6 +12,8 @@
     --tag-fix-t: #9a3412;
     --tag-imp: #dbeafe;
     --tag-imp-t: #1e40af;
+    --tag-warn: #fef3c7;
+    --tag-warn-t: #92400e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,6 +31,8 @@
         --tag-fix-t: #fb923c;
         --tag-imp: #1a2240;
         --tag-imp-t: #60a5fa;
+        --tag-warn: #4b2900;
+        --tag-warn-t: #fbbf24;
     }
 }
 
@@ -231,6 +235,11 @@ h1 {
     padding: 2px 7px;
     border-radius: 4px;
     margin-top: 1px;
+}
+
+.tag.warn {
+    background: var(--tag-warn);
+    color: var(--tag-warn-t);
 }
 
 .tag.new {

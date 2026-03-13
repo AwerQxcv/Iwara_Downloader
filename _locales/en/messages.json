@@ -141,23 +141,26 @@
   "update_notes_current_version": {
     "message": "Current Version"
   },
+  "update_notes_important": {
+    "message": "Important"
+  },
+  "update_notes_important_title": {
+    "message": "⚠️ After updating, please make sure to check the following."
+  },
+  "update_notes_important_desc": {
+    "message": "The format settings have been changed due to the update.\nThe previously configured formats can no longer be used, so please set them up again according to your environment."
+  },
   "update_notes_changes": {
     "message": "Changes"
   },
-  "update_notes_new": {
-    "message": "New"
-  },
   "update_notes_new_title": {
-    "message": "New Feature"
+    "message": "🆕 New Feature"
   },
   "update_notes_new_desc": {
     "message": "Download via keyboard shortcut has been added. The default shortcut is 'Alt+Shift+Z'.\n"
   },
-  "update_notes_imp": {
-    "message": "Improved"
-  },
   "update_notes_imp_title": {
-    "message": "Improvement"
+    "message": "🔧 Improvement"
   },
   "update_notes_imp_desc": {
     "message": "From now on, each update will display a popup window summarizing what has changed.\nUpdate history can also be viewed from the settings page."
