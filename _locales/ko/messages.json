@@ -165,6 +165,12 @@
   "update_notes_imp_desc": {
     "message": "앞으로 업데이트마다 팝업 창을 통한 업데이트 확인 기능으로 무엇이 변경됐는지 알기 쉽게끔 하였습니다.\n또한 업데이트 내역을 설정 페이지에서 열어볼 수 있게끔 설정하였습니다."
   },
+  "update_notes_bug_title": {
+    "message": "🐛 버그 수정"
+  },
+  "update_notes_bug_desc": {
+    "message": "Private와 Unlisted 속성이 동시에 있을 경우 날짜 서식이 올바르게 작동하지 않던 버그를 수정하였습니다.\n또한 날짜 서식에서 초 단위 서식이 작동하지 않던 버그를 수정하였습니다."
+  },
   "update_notes_bug_report": {
     "message": "🐛 버그 제보"
   }

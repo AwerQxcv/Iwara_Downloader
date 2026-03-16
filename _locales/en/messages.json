@@ -165,6 +165,12 @@
   "update_notes_imp_desc": {
     "message": "From now on, each update will display a popup window summarizing what has changed.\nUpdate history can also be viewed from the settings page."
   },
+  "update_notes_bug_title": {
+    "message": "🐛 Bug Fixes"
+  },
+  "update_notes_bug_desc": {
+    "message": "Fixed a bug where date formatting would not work correctly when both 'Private' and 'Unlisted' properties were present.\nAlso fixed a bug where second-level date formatting was not working."
+  },
   "update_notes_bug_report": {
     "message": "🐛 Report a Bug"
   }

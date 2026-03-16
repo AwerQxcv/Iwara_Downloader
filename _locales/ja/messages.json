@@ -165,6 +165,12 @@
   "update_notes_imp_desc": {
     "message": "今後のアップデートごとに、ポップアップウィンドウで変更内容を確認できるようになりました。\nまた、設定ページからアップデート履歴を確認できるようになりました。"
   },
+  "update_notes_bug_title": {
+    "message": "🐛 バグ修正"
+  },
+  "update_notes_bug_desc": {
+    "message": "PrivateとUnlistedのプロパティが同時に存在する場合、日付フォーマットが正しく機能しない問題を修正しました。\nまた、日付フォーマットの秒単位の処理についても修正しました。"
+  },
   "update_notes_bug_report": {
     "message": "🐛 バグ報告"
   }
