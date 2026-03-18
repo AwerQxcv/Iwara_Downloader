@@ -48,13 +48,7 @@ function getVideoID() {
 
 function getDate(num) {
     try {
-        let datevalue;
-        let datevalue_first = document.querySelector(".page-video__details__subtitle > div:nth-child(1)").title
-        if (datevalue_first.length == 0) {
-            datevalue = document.querySelector(".page-video__details__subtitle > div:nth-child(2)").title
-        } else {
-            datevalue = datevalue_first
-        }
+        let datevalue = document.querySelector(".page-video__details__subtitle").querySelector("div.text.text--muted.text--small").title;
         let replaced = /(\d+)\/(\d+)\/(\d+) (\d+):(\d+):(\d+)/.exec(datevalue);
         console.log("getDate : date extracted", replaced);
         return replaced[num];
@@ -73,8 +67,9 @@ function getDateNow(query) {
         dateNow.getDate().toString(),
         dateNow.getHours().toString(),
         dateNow.getMinutes().toString(),
+        dateNow.getSeconds().toString()
     ];
-    return replaced[query].padStart(2, "0");
+    return replaced[query];
 }
 
 function getExtType() {
@@ -157,12 +152,14 @@ function convertMacrosInPath(query) {
     query = query.replaceAll("$DD$", getDate(3).padStart(2, "0"));
     query = query.replaceAll("$hh$", getDate(4).padStart(2, "0"));
     query = query.replaceAll("$mm$", getDate(5).padStart(2, "0"));
+    query = query.replaceAll("$ss$", getDate(6).padStart(2, "0"));
     query = query.replaceAll("$NYYYY$", getDateNow(1));
     query = query.replaceAll("$NYY$", getDateNow(1).slice(-2));
     query = query.replaceAll("$NMM$", getDateNow(2).padStart(2, "0"));
     query = query.replaceAll("$NDD$", getDateNow(3).padStart(2, "0"));
     query = query.replaceAll("$Nhh$", getDateNow(4).padStart(2, "0"));
     query = query.replaceAll("$Nmm$", getDateNow(5).padStart(2, "0"));
+    query = query.replaceAll("$Nss$", getDateNow(6).padStart(2, "0"));
     return query.trim();
 }
 
