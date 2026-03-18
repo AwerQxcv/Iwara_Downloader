@@ -1,6 +1,9 @@
 // 동영상 페이지에 있을 때, 다운로드 아이콘을 표시
 let checkForValidUrl = (tabId, changeInfo, tab) => {
-  if (tab.url.indexOf("www.iwara.tv/video/") > -1) {
+  if (
+    changeInfo.status === "complete" &&  // 페이지 로딩 완료 후에만
+    tab.url.indexOf("www.iwara.tv/video/") > -1
+  ) {
     browser.pageAction.show(tabId);
   }
 }
@@ -9,6 +12,7 @@ browser.tabs.onUpdated.addListener(checkForValidUrl);
 
 // 아이콘이 클릭 됐을 때, down.js로 메시지 전송
 browser.pageAction.onClicked.addListener((tab) => {
+  console.log( "Download action clicked" );
   browser.tabs.sendMessage(tab.id, { "current_url": tab.url });
 });
 
@@ -16,10 +20,29 @@ browser.pageAction.onClicked.addListener((tab) => {
 browser.commands.onCommand.addListener((command) => {
   if (command === "download") {
     browser.tabs.query({ active: true, currentWindow: true }).then(([tab]) => {
+      console.log( "Download action clicked" );
       browser.tabs.sendMessage(tab.id, { "current_url": tab.url });
     });
   }
 });
+
+// URL 변경 감지 (SPA 대응)
+let lastUrl = location.href;
+
+const observer = new MutationObserver(() => {
+  if (location.href !== lastUrl) {
+    lastUrl = location.href;
+    onUrlChange();
+  }
+});
+
+observer.observe(document.body, { childList: true, subtree: true });
+
+function onUrlChange() {
+  if (location.href.indexOf("/video/") > -1) {
+    // 기존 down.js 초기화 로직 실행
+  }
+}
 
 // 업데이트 & 설치 시 표시되는 팝업 창
 browser.runtime.onInstalled.addListener((details) => {
@@ -49,3 +72,4 @@ function download(url, filename, auto_down) {
     saveAs: auto_down
   });
 }
+
